@@ -11,7 +11,7 @@ var main = function(x, list){
 	var divs = {}; 
 	for(var i = 0; i < x; i ++){ 
 		divs[i] = document.createElement('div'); 
-		var l = document.createElement('ul'); 
+		var l = document.createElement('ol'); 
 		divs[i].appendChild(l); 
 	}	
 	var size = Math.floor(list.length / x);  
