@@ -4,8 +4,15 @@
 	</head>
 	<body> 
 		<form id="main" action="#"> 
-			<textarea name="list"></textarea> 
-			<input type="number" id="many"> 
+			<div id="txt"> 
+				<p> Enter names, one name per line </p> 
+				<textarea name="list"></textarea> 
+			</div> 
+			<div id="num"> 
+				<p> Enter Number of groups </p> 
+				<input type="number" id="many"> 
+			</div> 
+			
 			<input type="button" onclick="run()" value="run"> 
 		</form> 
 		<div id="content"> 
