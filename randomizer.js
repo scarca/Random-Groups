@@ -26,16 +26,17 @@ var main = function(x, list){
 			var li = document.createElement('li'); 
 			li.appendChild(tn); 
 			divs[j].childNodes[0].appendChild(li); 
-			if(left  > 0){ 
-				var index = Math.floor(Math.random()*list.length); 
-				var text = list[index];
-				list.splice(index, 1);	
-				var tn = document.createTextNode(text); 
-				var li = document.createElement('li'); 
-				li.appendChild(tn); 
-				divs[j].childNodes[0].appendChild(li); 
-				left--; 
-			}
+		
+		}
+		if(left  > 0){ 
+			var index = Math.floor(Math.random()*list.length); 
+			var text = list[index];
+			list.splice(index, 1);	
+			var tn = document.createTextNode(text); 
+			var li = document.createElement('li'); 
+			li.appendChild(tn); 
+			divs[j].childNodes[0].appendChild(li); 
+			left--; 
 		}
 		document.getElementById('content').appendChild(divs[j]); 
 	}
