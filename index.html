@@ -3,16 +3,11 @@
 		<script type='text/javascript' src="./randomizer.js" ></script>  
 	</head>
 	<body> 
-		<form id="main" action="#"> 
-			<div id="txt"> 
-				<p> Enter names, one name per line </p> 
-				<textarea name="list"></textarea> 
-			</div> 
-			<div id="num"> 
-				<p> Enter Number of groups </p> 
-				<input type="number" id="many"> 
-			</div> 
-			
+
+		<form onsubmit="return run()" id="main" action="#"> 
+			<textarea name="list"> 
+			</textarea> 
+			<input type="number" id="many"> 
 			<input type="button" onclick="run()" value="run"> 
 		</form> 
 		<div id="content"> 
