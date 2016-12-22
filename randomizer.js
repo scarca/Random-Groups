@@ -6,7 +6,6 @@ var run = function(){
 	var list = grabber(); 
 	main(x, list); 
 }
-
 var main = function(x, list){ 
 	var divs = {}; 
 	for(var i = 0; i < x; i ++){ 
